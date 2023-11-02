@@ -7,7 +7,7 @@ app.get('/', async (req, res) => {
   const username = req.query.username || 'thlo7777';
   try {
     const result = await axios.get(
-      `https://api.github.com/users/${username}/repos`
+      `https://api.github.com/users/thlo7777/repos`
     );
     const repos = result.data
       .map((repo) => ({
